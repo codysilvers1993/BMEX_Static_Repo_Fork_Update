@@ -14,7 +14,11 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-	<p style={{width:'60%', margin:'auto'}}><a href="https://bmex.dev"><Image alt="BMEX Logo" src={logo}/></a></p>
+        <p style={{ width: '60%', margin: 'auto' }}>
+          <a href="https://bmex.dev">
+            <Image alt="BMEX Logo" src={logo} style={{ marginTop: '485px' }} />
+          </a>
+        </p>
         <h1 className={styles.title}>
           Welcome to <a href="https://bmex.dev">BMEX!</a>
         </h1>
@@ -32,7 +36,7 @@ export default function Home() {
           </Link>
 	  <Link href="/emulator">
           <a className={styles.card}>
-            <h2>Emulators &rarr;</h2>
+            <h2>Emulator &rarr;</h2>
             <p>Binding energies and charge radii using a reduced basis method emulator.</p>
           </a>
           </Link>
