@@ -37,10 +37,9 @@ export default function Home() {
               </Link>
 
 
-
               <Link href="/gpe" passHref>
                 <a className={styles.card}>
-                  <h2>Gaussian Process Extrapolar &rarr;</h2>
+                  <h2>Gaussian Process Extrapolator &rarr;</h2>
                   <p>Simple Gaussian Process explorer for nuclear models.</p>
                 </a>
               </Link>
@@ -63,10 +62,6 @@ export default function Home() {
                 </a>
               </Link>
           </div>
-
-
-
-
 
 
         </main>

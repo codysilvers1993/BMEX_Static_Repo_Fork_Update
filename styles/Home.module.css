@@ -1,11 +1,10 @@
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  height: 100vh;
+  background: #f3dac5;
 }
 
 .main {
@@ -87,7 +86,7 @@
   text-align: left;
   color: inherit;
   text-decoration: none;
-  border: 1px solid #eaeaea;
+  border: 1px solid #ff9741;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   width: 100%;
@@ -101,8 +100,8 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: darkblue;
+  border-color: darkblue;
 }
 
 .card h2 {
@@ -132,7 +131,7 @@
 @media (max-width: 768px) {
   /* Adjust margins for smaller screens */
   .main {
-    margin-top: 500px;
+    margin-top: 40px;
   }
 
   .title {
@@ -141,16 +140,17 @@
 
   .grid {
     grid-template-columns: auto;
-    width: 100%;
+    width: 95%;
   }
 
   .boxCustom {
-    width: 100%;
+    width: 95%;
   }
 
   .image {
-    width: 90%;
-    height: 90%;
+    width: 95%;
+    height: 95%;
+    padding-left: 14px;
   }
 }
 
@@ -173,7 +173,7 @@
 @media (min-width: 1025px) {
   /* Adjust margins for larger screens */
   .main {
-    margin-top: 60px;
+    margin-top: 5px;
   }
 
   .title {
@@ -187,7 +187,7 @@
 }
 
 .header {
-  margin-top: 200px;
+  margin-top: 50px;
 }
 
 
