@@ -13,23 +13,15 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <main className={styles.main} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
+        <main className={styles.main}>
+            <div className = {styles.header}>
           <a href="https://bmex.dev">
-            <Image alt="BMEX Logo" src={logo} />
+            <Image alt="BMEX Logo" src={logo} className = {styles.image}/>
           </a>
-          <h1 className={styles.title}>
-            Welcome to BMEX!
-          </h1>
-          <p className={styles.description}>
-            Explore masses in the Bayesian way!
-          </p>
-
-
-
-
+            </div>
 
           <div className={styles.grid}>
-            <div className={styles.column}>
+
               <Link href="/data" passHref>
                 <a className={styles.card}>
                   <h2>Masses and Filters &rarr;</h2>
@@ -43,9 +35,9 @@ export default function Home() {
                   <p>Binding energies and charge radii using a reduced basis method emulator.</p>
                 </a>
               </Link>
-            </div>
 
-            <div className={styles.column}>
+
+
               <Link href="/gpe" passHref>
                 <a className={styles.card}>
                   <h2>Gaussian Process Extrapolar &rarr;</h2>
@@ -59,19 +51,17 @@ export default function Home() {
                   <p>Dynamically produce nuclear potential energy surfaces using machine learning.</p>
                 </a>
               </Link>
-            </div>
+
           </div>
 
 
-          <div className={styles.grid}>
-            <div className={styles.columnFull}>
+          <div className={styles.boxCustom}>
               <Link href="https://beta.bmex.dev/masses" passHref>
                 <a className={styles.card}>
                   <h2>Masses and Filters Beta &rarr;</h2>
                   <p>Binding energies and related quantities for experiment and various models, including additional beta features.</p>
                 </a>
               </Link>
-            </div>
           </div>
 
 
